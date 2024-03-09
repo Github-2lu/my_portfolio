@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#" class="logo">Tulu</a>
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#internships" onclick="toggleMenu()">Internships</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggleMenu();"></div>
+    </nav>
+
+    <!-- Main text and image -->
+    <section id="home">
+        <div class="home-text">
+            <h1>Hey, I'am<br>Sudip Datta <br>(<span>Tulu</span>)<br>Web Developer<br>Software Engineer<br>ML Enthusiastic
+            </h1>
+            <!-- button -->
+            <a href="#contact"> Contact Me</a>
+        </div>
+        <div class="home-img">
+            <img src="./assets/images/cropped_tulu_logo.jpg" alt="my photo">
+        </div>
+        <!-- social presence -->
+        <div class="social">
+            <a href="https://github.com/Github-2lu/" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://gitlab.com/GitLab-2lu/" target="_blank"><i class='bx bxl-gitlab'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="heading">
+            <h2>About</h2>
+            <p>My Introduction</p>
+        </div>
+
+        <!-- About content -->
+        <div class="about-content">
+            <div class="about-img">
+                <img src="./assets/images/about.webp" alt="about image">
+            </div>
+            <div class="about-text">
+                <h1>I'm Sudip Datta</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure, accusamus magni sint
+                    repellendus nesciunt nisi aspernatur ex vitae porro sapiente alias dolores eum doloremque in
+                    provident obcaecati! Vitae dolore ea modi recusandae aperiam magnam aliquam animi dolorem ad labore?
+                </p>
+                <!-- Button -->
+                <a href="https://flowcv.com/resume/nav3nshm65" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="heading">
+            <h2>Projects</h2>
+            <p>Completed Projects</p>
+        </div>
+        <div class="projects-content">
+            <div class="projects-boxes">
+                <div class="box">
+                    <img src="./assets/images/web.jpg" alt="web image">
+                    <h1>Web Projects</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis aperiam? Aut cum
+                        consectetur ipsa. Quas ex illum perspiciatis molestias.</p>
+                </div>
+
+                <div class="box">
+                    <img src="./assets/images/flutter.webp" alt="Flutter image">
+                    <h1>Flutter Projects</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis aperiam? Aut cum
+                        consectetur ipsa. Quas ex illum perspiciatis molestias.</p>
+                </div>
+
+                <div class="box">
+                    <img src="./assets/images/white-hat.png" alt="white hat image">
+                    <h1>Hacking Projects</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis aperiam? Aut cum
+                        consectetur ipsa. Quas ex illum perspiciatis molestias.</p>
+                </div>
+
+                <div class="box">
+                    <img src="./assets/images/linux-distro.webp" alt="linux distro image">
+                    <h1>Linux Distro Projects</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis aperiam? Aut cum
+                        consectetur ipsa. Quas ex illum perspiciatis molestias.</p>
+                </div>
+            </div>
+            <div class="projects-img">
+                <img src="./assets/images/projects2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internships">
+        <div class="heading">
+            <h2>Internships</h2>
+            <p>Offered internships</p>
+        </div>
+        <div class="internships-content">
+            <div class="internships-image">
+                <img src="./assets/images/wells-fargo.jpg" alt="wells fargo image">
+            </div>
+            <div class="internships-text">
+                <h1>Wells Fargo</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo ducimus inventore vero? Excepturi
+                    similique saepe vitae harum nemo tenetur quod impedit praesentium assumenda debitis earum, sequi
+                    fuga ipsum beatae cumque non, corrupti in neque, sunt sapiente quia modi necessitatibus. Est?</p>
+                <a href="https://www.wellsfargo.com/" target="_blank">Website</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="heading contact-heading">
+            <h2>Contact</h2>
+            <p>Leave a message and i shall try to reply in 24 hours.</p>
+        </div>
+        <div class="contact-content">
+            <div class="social-media">
+                <h1>Connect With Me<br>By LinkedIn</h1>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Your E-mail">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message Here..."></textarea>
+                    <input type="button" value="Send" class="contact-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- copyright -->
+    <div class="copyright">
+        <p>&#169; Tulu All Rights Reserved</p>
+    </div>
+
+    <!-- Link to scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- link to javascript -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,577 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* --main-color: deepskyblue; */
+    --main-color: blue;
+    --second-color: black;
+}
+
+section {
+    padding: 100px;
+}
+
+/* Home css */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Navbar css */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background: white;
+    box-shadow: 0 1px 4px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+/* logo css */
+.logo {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+}
+
+ul li a {
+    padding: 10px 22px;
+    color: var(--second-color);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+ul li a:hover {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+}
+
+/* home text css */
+.home-text {
+    max-width: 500px;
+}
+
+.home-text h1 {
+    color: var(--second-color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 5.5rem;
+}
+
+.home-text span {
+    color: var(--main-color);
+}
+
+.home-img {
+    width: 500px;
+    height: 500px;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Contack me button */
+.home-text a {
+    padding: 12px 34px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.home-text a:hover {
+    background: var(--second-color);
+    box-shadow: 0 10px 50px black;
+}
+
+/* social */
+.social {
+    position: absolute;
+    display: flex;
+    bottom: 5%;
+    left: 290px;
+}
+
+.social i {
+    margin-right: 24px;
+    font-size: 24px;
+    color: var(--second-color);
+}
+
+.social i:hover {
+    color: var(--main-color);
+}
+
+/* About Heading */
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading h2 {
+    color: var(--second-color);
+    border-bottom: 3px solid var(--second-color);
+    font-size: 1.8rem;
+}
+
+.heading p {
+    color: var(--second-color);
+    margin-top: 0.5rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-img {
+    width: 500px;
+    height: 500px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.about-text {
+    width: 500px;
+    justify-content: center;
+}
+
+.about-text h1 {
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+
+.about-text p {
+    color: var(--second-color);
+    margin: 5px 0 24px;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.about-text a {
+    padding: 12px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about-text a:hover {
+    background-color: var(--second-color);
+    box-shadow: 0 10px 34px var(--second-color);
+}
+
+/* projects */
+.projects-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.5rem;
+}
+
+.projects-img {
+    height: 500px;
+    width: 500px;
+}
+
+.projects-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin: 20px;
+}
+
+.projects-boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects-boxes .box {
+    padding: 40px 20px;
+    background: var(--second-color);
+    color: white;
+    max-width: 320px;
+    border-radius: 15px;
+    margin: 16px;
+    text-align: center;
+}
+
+.box img {
+    height: 45px;
+}
+
+.box h1 {
+    font-size: 1.3rem;
+}
+
+
+.box p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.projects-boxes .box:hover {
+    transform: translateY(-10px);
+    background: var(--main-color);
+    transition: 0.2s;
+}
+
+/* internships section */
+
+.internships-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.5rem;
+}
+
+.internships-text {
+    max-width: 500px;
+}
+
+.internships-text h1 {
+    font-size: 1.5rem;
+    color: var(--second-color);
+    line-height: 2.4rem;
+    letter-spacing: 1px;
+}
+
+.internships-text p {
+    font-size: 1rem;
+    color: var(--second-color);
+    line-height: 2rem;
+    text-align: justify;
+    margin: 5px 0 18px;
+}
+
+.internships-text a {
+    padding: 12px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.internships-text a:hover {
+    background-color: var(--second-color);
+    box-shadow: 0 10px 34px var(--second-color);
+}
+
+.internships-image {
+    width: 500px;
+    height: 500px;
+}
+
+.internships-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Contact */
+#contact {
+    background-color: black;
+}
+
+.contact-heading h2 {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.contact-heading p {
+    color: white;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-form {
+    width: 360px;
+    margin-top: 4rem;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    font-size: 13px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    margin-bottom: 12px;
+}
+
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
+    color: var(--second-color);
+    letter-spacing: 1px;
+}
+
+.contact-form form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-button {
+    max-width: 100px;
+    font-weight: 600;
+    background: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.social-media {
+    max-width: 360px;
+}
+
+.social-media h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 5px 0 24px;
+}
+
+.social-media i {
+    color: var(--main-color);
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+.social-media i:hover {
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+
+.copyright {
+    padding: 20px;
+    background: var(--second-color);
+    color: white;
+    text-align: center;
+}
+/* This is done to hide the toggle div which was taking space in full screen
+late display block is used make it visible again */
+.toggle{
+    display: none;
+}
+
+/* Making responsive */
+
+@media (max-width:1000px) {
+    nav {
+        padding: 10px 50px;
+        z-index: 100;
+    }
+
+    .menu {
+        position: fixed;
+        top: 60px;
+        right: 100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--second-color);
+        transition: 0.5s ease;
+        z-index: 99;
+        border-top: 1px solid black;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    nav ul li a {
+        font-size: 35px;
+        line-height: 80px;
+        color: white;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAATElEQVRIS2NkoDFgpLH5DKMWEAzhAQmi/wSdhV8BiqOx+YDmFlDoAVTtAxIHNPcBzeOA5hbQPIiGvgU0jwOaWzD042DUByghQPPSFABt6AYZfO/+XQAAAABJRU5ErkJggg==);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .toggle.active {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABC0lEQVRYR+2WAQrDMAhF25t1J1l3sm0nWY82PzTgZI1f20EHCoVC1Dx/tOk4nMzGk/EMBeSdSClUCnkKeOt/30OTVLh4VZr1UExEoVk2usvzkOdGQsH3uvrj3TUWCFW+VDYGqsG0sAujLguEpHaDHpT1fUo8FHYtAsRCpWGwQRTIg9oFkwXagkJxaOBm9DHpc8wo1OKtGjpvCmaPQj2oNMyvgHrTd/iU6YS9I0tDZXvo2zQBVjd1CioD1BttuxaGigIx35ldUBEgBmZr+milWKBJdtKXKzPatoDDL9dZoPD7wcBYpfC7AkDXWIVaIii1uFk/HUIxUaAgS9y9gDzNSqFSyFPAW68e8hR6A0XOOiX/R+v/AAAAAElFTkSuQmCC);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    section {
+        padding: 80px;
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .home-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .social {
+        left: 110px;
+    }
+
+    .heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-img,
+    .internships-image {
+        width: 250px;
+        height: 400px;
+    }
+
+    .about-text,
+    .internships-text {
+        width: 400px;
+    }
+
+    .about-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        line-height: 1.5rem;
+    }
+
+    .projects-content {
+        flex-direction: column;
+    }
+
+    .projects-img {
+        order: -1;
+    }
+}
+
+@media (max-width:940px) {
+    section {
+        padding: 50px;
+    }
+}
+
+@media (max-width:880px) {
+    section {
+        padding: 25px;
+    }
+}
+
+@media (max-width:360px) {
+    section {
+        padding: 25px;
+    }
+
+    #home {
+        flex-direction: column;
+        max-width: 400px;
+        margin-top: 2rem;
+    }
+
+    .home-img {
+        width: 345px;
+        height: 345px;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .about-content,
+    .internships-content {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .internships-text {
+        max-width: 280px;
+    }
+
+    .internships-text h1 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .internships-image {
+        width: 200px;
+        height: 200px;
+        margin-top: 4rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .social-media {
+        margin-top: 4rem;
+    }
+
+    .content-form {
+        width: 300px;
+    }
+}
